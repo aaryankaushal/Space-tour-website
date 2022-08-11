@@ -1,7 +1,7 @@
 body{
     margin:0;
     padding: 0;
-    background-image: url("https://github.com/aaryankaushal/Space-tour-website/blob/main/assets/home/background-home-desktop.jpg?raw=true");
+    background-image: url('/assets/home/background-home-desktop.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
