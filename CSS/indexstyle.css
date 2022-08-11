@@ -1,7 +1,7 @@
 body{
     margin:0;
     padding: 0;
-    background-image: url("file:///E:/space-tourism-website-main/starter-code/assets/home/background-home-desktop.jpg");
+    background-image: url("assets/home/background-home-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
