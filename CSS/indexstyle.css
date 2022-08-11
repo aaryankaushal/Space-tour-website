@@ -1,0 +1,225 @@
+body{
+    margin:0;
+    padding: 0;
+    background-image: url("file:///E:/space-tourism-website-main/starter-code/assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo-image{
+    margin-top: 90px;
+    margin-left: 40px;animation: logoIn 2s;
+}
+hr{
+    position: absolute;
+    width:39%;
+    left: 190px;
+    top: 105px;
+    z-index: 1;
+    border: 1px solid rgb(148, 144, 144);
+    animation: hrIn 2s;
+}
+.header{
+    padding: 20px;
+    width: 60rem;
+    position: absolute;
+    left: 890px;
+    top: 62px;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);   
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2.7px;
+    animation: navIn 2s;
+}
+.header a{
+    color: rgba(255, 255, 255, 0.911);
+    text-decoration: none;
+}
+
+.top{
+    font-size: 1.3rem;
+    margin: 20px;
+    margin-left: 79px;
+}
+.active{
+    text-decoration: underline;
+    transition: none;
+}
+.header{
+    display: flex;
+    list-style: none;
+}
+.header a:hover{
+    color: white;
+}
+.header a:after{
+    position: relative;
+    top: 40px;
+}
+.header a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: white;
+    display: block;
+    transition: width 0.5s ;
+  }
+  
+ .header a:hover::after {
+    width: 100%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+.details{
+    color:white;
+    position: absolute;
+    bottom: 150px;
+    left: 180px;
+    padding: 10px;
+}
+.details h5{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    letter-spacing: 4.75px;
+    margin: 0;
+    animation: navIn 2s;
+}
+.details h1{
+    font-family: 'Bellefair', serif;
+    font-size: 150px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 30px ;
+    animation: transitionIn 2s;
+}
+.details p{
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: 0;
+    line-height: 2;
+    letter-spacing: 1px;
+    font-size: 1.21rem;
+    animation: logoIn 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.explore{
+    width: 280px;
+    height: 280px;
+    background-color: white;
+    position: absolute;
+    bottom: 10rem;
+    right: 19rem;
+    border-radius: 50%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    animation: hrIn 2s;
+}
+.exp{
+    position: absolute;
+    font-size: 2rem;
+    font-family: 'Bellefair', serif;
+    text-decoration: none;
+    color: black;
+    bottom: 7.5rem;
+    right: 4.5rem;
+}
+
+.explore:hover:after {
+    -webkit-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    transform: scale(0.85);
+}
+
+.explore:hover {
+    box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.4);
+    color: #fff;
+    transition: ease-in-out;
+    transition-duration: 0.2s, 2s;
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes imageIn{
+    from{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes linksIn{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    top{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes navIn{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes logoIn{
+    from{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+@keyframes hrIn{
+    from{
+        opacity: 0;
+        transform: translateZ(10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
